@@ -1,0 +1,351 @@
+
+/* ==============================
+   GLOBAL STYLES
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+/* ==============================
+   LOGIN & REGISTER
+============================== */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #ff7a18, #ffb347);
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.auth-card h1 {
+    color: #ff6b00;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.auth-card h2,
+.auth-card > p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.auth-card label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+.auth-card input,
+.auth-card textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.auth-card textarea {
+    min-height: 75px;
+    resize: vertical;
+}
+
+.auth-card button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    background: #ff6b00;
+    color: white;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+.auth-card button:hover {
+    background: #e85d00;
+}
+
+.auth-link {
+    margin-top: 20px;
+}
+
+.auth-link a {
+    color: #ff6b00;
+    font-weight: bold;
+}
+
+.error {
+    color: #d00000;
+}
+
+.success {
+    color: #16833c;
+}
+
+/* ==============================
+   NAVIGATION BAR
+============================== */
+
+.navbar {
+    background: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.navbar h1 {
+    color: #ff6b00;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    font-weight: bold;
+}
+
+.navbar nav a:hover {
+    color: #ff6b00;
+}
+
+/* ==============================
+   HOME PAGE
+============================== */
+
+.hero {
+    text-align: center;
+    padding: 65px 20px;
+    color: white;
+    background: linear-gradient(135deg, #ff6b00, #ff9f43);
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 17px;
+}
+
+.restaurant-section,
+.menu-section,
+.cart-section,
+.orders-section {
+    padding: 40px 6%;
+}
+
+.restaurant-section > h2,
+.menu-section > h2,
+.cart-section > h2,
+.orders-section > h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* ==============================
+   RESTAURANT & MENU CARDS
+============================== */
+
+.restaurant-card,
+.menu-card {
+    display: inline-flex;
+    vertical-align: top;
+    flex-direction: column;
+    width: 280px;
+    margin: 12px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.restaurant-card img,
+.menu-card img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+.restaurant-placeholder,
+.food-placeholder {
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff0df;
+    font-size: 60px;
+}
+
+.restaurant-info,
+.menu-info {
+    padding: 18px;
+}
+
+.restaurant-info h3,
+.menu-info h3 {
+    margin-bottom: 10px;
+}
+
+.restaurant-info p,
+.menu-info p {
+    margin: 8px 0;
+    color: #666;
+}
+
+.view-menu-btn,
+.menu-info button {
+    display: inline-block;
+    background: #ff6b00;
+    color: white;
+    padding: 11px 17px;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+.menu-info input {
+    width: 65px;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+/* ==============================
+   TABLES
+============================== */
+
+.cart-table,
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 20px;
+}
+
+.cart-table th,
+.cart-table td,
+.orders-table th,
+.orders-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-table th,
+.orders-table th {
+    background: #ff6b00;
+    color: white;
+}
+
+.order-status {
+    color: #16833c;
+    font-weight: bold;
+}
+
+/* ==============================
+   EMPTY STATES
+============================== */
+
+.empty-cart,
+.empty-orders,
+.empty-message {
+    text-align: center;
+    padding: 35px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.empty-cart a,
+.empty-orders a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ff6b00;
+    font-weight: bold;
+}
+
+.cart-note {
+    margin: 20px 0;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .restaurant-card,
+    .menu-card {
+        width: 100%;
+        max-width: 350px;
+        margin: 12px auto;
+        display: flex;
+    }
+
+    .cart-table,
+    .orders-table {
+        font-size: 12px;
+    }
+
+    .cart-table th,
+    .cart-table td,
+    .orders-table th,
+    .orders-table td {
+        padding: 8px 4px;
+    }
+}
+
+.order-success {
+    background: #e6f6ec;
+    color: #16833c;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}

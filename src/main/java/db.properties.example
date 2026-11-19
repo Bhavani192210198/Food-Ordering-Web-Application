@@ -1,0 +1,3 @@
+FOODAPP_DB_URL=jdbc:mysql://localhost:3306/foodapp?useSSL=false&serverTimezone=UTC
+FOODAPP_DB_USER=root
+FOODAPP_DB_PASSWORD=YOUR_LOCAL_MYSQL_PASSWORD
