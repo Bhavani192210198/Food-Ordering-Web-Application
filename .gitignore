@@ -1,0 +1,15 @@
+# Eclipse / Java build output
+build/
+bin/
+*.class
+.metadata/
+.settings/
+.project
+.DS_Store
+Thumbs.db
+
+# Local database credentials - NEVER commit
+src/main/java/db.properties
+.env
+.env.*
+!.env.example

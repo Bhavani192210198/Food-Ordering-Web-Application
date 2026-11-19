@@ -1,0 +1,11 @@
+
+# Private database configuration
+src/main/java/db.properties
+
+# Compiled files
+build/
+bin/
+*.class
+
+# IDE metadata
+.metadata/
